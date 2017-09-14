@@ -5,6 +5,8 @@
  */
 package lab8_franciscosantos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Francisco Santos
@@ -28,8 +30,8 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jd_agregar = new javax.swing.JDialog();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel2 = new javax.swing.JPanel();
+        Hadas = new javax.swing.JTabbedPane();
+        Lamias = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         tf_nombreLam = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
@@ -43,9 +45,15 @@ public class Principal extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         tf_saludLam = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        tf_poderLam = new javax.swing.JTextField();
         bt_guardarLamias = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        sp_aletas = new javax.swing.JSpinner();
+        jLabel39 = new javax.swing.JLabel();
+        sp_branquias = new javax.swing.JSpinner();
+        jLabel40 = new javax.swing.JLabel();
+        Hamadriades = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         tf_nombreHam = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
@@ -54,14 +62,18 @@ public class Principal extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         sp_edadHam = new javax.swing.JSpinner();
         jLabel22 = new javax.swing.JLabel();
+        tf_arbol = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
         sp_alasHam = new javax.swing.JSpinner();
         jLabel24 = new javax.swing.JLabel();
         tf_saludHam = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
         tf_poderHam = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
         bt_guardarHamadriades = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        Silfide = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         tf_nombreSil = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
@@ -77,7 +89,9 @@ public class Principal extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         tf_poderSil = new javax.swing.JTextField();
         bt_guardarSilfide = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        Salamandras = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         tf_nombreSal = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -93,6 +107,12 @@ public class Principal extends javax.swing.JFrame {
         bt_guardarSalamandra = new javax.swing.JButton();
         sp_edadSal = new javax.swing.JSpinner();
         jLabel10 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jd_modificar = new javax.swing.JDialog();
+        jd_eliminar = new javax.swing.JDialog();
+        jd_pelea = new javax.swing.JDialog();
+        jLabel45 = new javax.swing.JLabel();
         jl_pelea = new javax.swing.JLabel();
         jl_eliminar = new javax.swing.JLabel();
         jl_modidficar = new javax.swing.JLabel();
@@ -100,41 +120,67 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        abrir = new javax.swing.JMenuItem();
+        guardar = new javax.swing.JMenuItem();
+        guardarComo = new javax.swing.JMenuItem();
+        Salir = new javax.swing.JMenuItem();
+        About = new javax.swing.JMenuItem();
 
+        jd_agregar.setTitle("Agregar");
+
+        Lamias.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Nombre");
+        Lamias.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 52, -1, -1));
+        Lamias.add(tf_nombreLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 52, 146, -1));
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("Estatura");
+        Lamias.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 93, -1, -1));
 
         sp_estaturaLam.setModel(new javax.swing.SpinnerNumberModel(1, 1, 15, 1));
         sp_estaturaLam.setMaximumSize(new java.awt.Dimension(15, 15));
         sp_estaturaLam.setMinimumSize(new java.awt.Dimension(1, 1));
+        Lamias.add(sp_estaturaLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 90, 49, -1));
 
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("cm");
+        Lamias.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 93, -1, -1));
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel13.setText("Edad");
+        Lamias.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 131, -1, -1));
 
         sp_edadLam.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        Lamias.add(sp_edadLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 128, 50, -1));
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel14.setText("años");
+        Lamias.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 131, -1, -1));
 
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel15.setText("Alas");
+        Lamias.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 213, -1, -1));
 
-        sp_alasLam.setModel(new javax.swing.SpinnerNumberModel(16, 16, null, 1));
+        sp_alasLam.setModel(new javax.swing.SpinnerNumberModel(2, 2, null, 1));
+        Lamias.add(sp_alasLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 210, 50, -1));
 
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("Salud");
+        Lamias.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 251, -1, -1));
 
         tf_saludLam.setText("683");
         tf_saludLam.setEnabled(false);
+        Lamias.add(tf_saludLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 248, 36, -1));
 
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel17.setText("Poder");
+        Lamias.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 301, -1, -1));
 
-        jTextField6.setText("71");
-        jTextField6.setEnabled(false);
+        tf_poderLam.setText("71");
+        tf_poderLam.setEnabled(false);
+        Lamias.add(tf_poderLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 298, 36, -1));
 
         bt_guardarLamias.setText("Guardar");
         bt_guardarLamias.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -142,109 +188,94 @@ public class Principal extends javax.swing.JFrame {
                 bt_guardarLamiasMouseClicked(evt);
             }
         });
+        Lamias.add(bt_guardarLamias, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 286, 84, 44));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(18, 18, 18)
-                        .addComponent(tf_nombreLam, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel17))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(sp_estaturaLam, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel12))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_saludLam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
-                                .addGap(48, 48, 48)
-                                .addComponent(bt_guardarLamias, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(sp_edadLam, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_alasLam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel14)))))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_nombreLam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(sp_estaturaLam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(sp_edadLam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel15)
-                    .addComponent(sp_alasLam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(tf_saludLam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bt_guardarLamias, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        jLabel37.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("Lamias");
+        Lamias.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 11, 165, 35));
 
-        jTabbedPane1.addTab("Lamias", jPanel2);
+        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel38.setText("Aleta");
+        Lamias.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 172, -1, -1));
 
+        sp_aletas.setModel(new javax.swing.SpinnerNumberModel(5, 5, null, 1));
+        Lamias.add(sp_aletas, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 169, 51, -1));
+
+        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel39.setText("Branquias");
+        Lamias.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 172, -1, -1));
+
+        sp_branquias.setModel(new javax.swing.SpinnerNumberModel(1, 1, 7, 1));
+        Lamias.add(sp_branquias, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 169, 44, -1));
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/lamia.jpg"))); // NOI18N
+        jLabel40.setText("jLabel40");
+        Lamias.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 360));
+
+        Hadas.addTab("Lamias", Lamias);
+
+        Hamadriades.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel18.setText("Nombre");
+        Hamadriades.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+        Hamadriades.add(tf_nombreHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 57, 146, -1));
 
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setText("Estatura");
+        Hamadriades.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, -1, -1));
 
         sp_estaturaHam.setModel(new javax.swing.SpinnerNumberModel(1, 1, 15, 1));
         sp_estaturaHam.setMaximumSize(new java.awt.Dimension(15, 15));
         sp_estaturaHam.setMinimumSize(new java.awt.Dimension(1, 1));
+        Hamadriades.add(sp_estaturaHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 105, 49, -1));
 
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("cm");
+        Hamadriades.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, -1, -1));
 
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel21.setText("Edad");
+        Hamadriades.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 153, -1, -1));
 
         sp_edadHam.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        Hamadriades.add(sp_edadHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 150, 50, -1));
 
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel22.setText("años");
+        Hamadriades.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 153, -1, -1));
 
+        tf_arbol.setText("173");
+        tf_arbol.setEnabled(false);
+        Hamadriades.add(tf_arbol, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 40, 20));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel23.setText("Alas");
+        Hamadriades.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 197, -1, -1));
 
-        sp_alasHam.setModel(new javax.swing.SpinnerNumberModel(16, 16, null, 1));
+        sp_alasHam.setModel(new javax.swing.SpinnerNumberModel(2, 2, null, 1));
+        Hamadriades.add(sp_alasHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 191, 50, -1));
 
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setText("Salud");
+        Hamadriades.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, -1, -1));
 
         tf_saludHam.setText("683");
         tf_saludHam.setEnabled(false);
+        Hamadriades.add(tf_saludHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 235, 36, -1));
 
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel25.setText("Poder");
+        Hamadriades.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
 
         tf_poderHam.setText("71");
         tf_poderHam.setEnabled(false);
+        Hamadriades.add(tf_poderHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 285, 36, -1));
+
+        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel44.setText("Arbol");
+        Hamadriades.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 234, 40, 20));
 
         bt_guardarHamadriades.setText("Guardar");
         bt_guardarHamadriades.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -252,109 +283,76 @@ public class Principal extends javax.swing.JFrame {
                 bt_guardarHamadriadesMouseClicked(evt);
             }
         });
+        Hamadriades.add(bt_guardarHamadriades, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 273, 84, 44));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addGap(18, 18, 18)
-                        .addComponent(tf_nombreHam, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel25))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(sp_estaturaHam, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel20))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(tf_poderHam, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_saludHam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
-                                .addGap(48, 48, 48)
-                                .addComponent(bt_guardarHamadriades, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(sp_edadHam, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_alasHam, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel22)))))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_nombreHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(sp_estaturaHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21)
-                    .addComponent(sp_edadHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel23)
-                    .addComponent(sp_alasHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(tf_saludHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(tf_poderHam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bt_guardarHamadriades, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        jLabel36.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("Hamadriades");
+        Hamadriades.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 11, 165, 35));
 
-        jTabbedPane1.addTab("Hamadriades", jPanel3);
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/driade.jpg"))); // NOI18N
+        jLabel41.setText("jLabel41");
+        Hamadriades.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 360));
 
+        Hadas.addTab("Hamadriades", Hamadriades);
+
+        Silfide.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("Nombre");
+        Silfide.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+        Silfide.add(tf_nombreSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 57, 146, -1));
 
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("Estatura");
+        Silfide.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, -1, -1));
 
         sp_estaturaSil.setModel(new javax.swing.SpinnerNumberModel(1, 1, 15, 1));
         sp_estaturaSil.setMaximumSize(new java.awt.Dimension(15, 15));
         sp_estaturaSil.setMinimumSize(new java.awt.Dimension(1, 1));
+        Silfide.add(sp_estaturaSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 105, 49, -1));
 
         jLabel28.setText("cm");
+        Silfide.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, -1, -1));
 
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("Edad");
+        Silfide.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 153, -1, -1));
 
         sp_edadSil.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        Silfide.add(sp_edadSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 150, 50, -1));
 
         jLabel30.setText("años");
+        Silfide.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 153, -1, -1));
 
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("Alas");
+        Silfide.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 197, -1, -1));
 
-        sp_alasSil.setModel(new javax.swing.SpinnerNumberModel(16, 16, null, 1));
+        sp_alasSil.setModel(new javax.swing.SpinnerNumberModel(6, 6, null, 1));
+        Silfide.add(sp_alasSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 191, 50, -1));
 
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("Salud");
+        Silfide.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, -1, -1));
 
         tf_saludSil.setText("683");
         tf_saludSil.setEnabled(false);
+        Silfide.add(tf_saludSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 235, 36, -1));
 
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("Poder");
+        Silfide.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
 
         tf_poderSil.setText("71");
         tf_poderSil.setEnabled(false);
+        Silfide.add(tf_poderSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 285, 36, -1));
 
         bt_guardarSilfide.setText("Guardar");
         bt_guardarSilfide.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -362,105 +360,72 @@ public class Principal extends javax.swing.JFrame {
                 bt_guardarSilfideMouseClicked(evt);
             }
         });
+        Silfide.add(bt_guardarSilfide, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 273, 84, 44));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel26)
-                        .addGap(18, 18, 18)
-                        .addComponent(tf_nombreSil, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel29)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel32)
-                            .addComponent(jLabel33))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(sp_estaturaSil, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel28))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(tf_poderSil, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_saludSil, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
-                                .addGap(48, 48, 48)
-                                .addComponent(bt_guardarSilfide, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(sp_edadSil, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_alasSil, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel30)))))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_nombreSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel26))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(sp_estaturaSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel28))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29)
-                    .addComponent(sp_edadSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel30))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel31)
-                    .addComponent(sp_alasSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel32)
-                    .addComponent(tf_saludSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(tf_poderSil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bt_guardarSilfide, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        jLabel35.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("Silfide");
+        Silfide.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 11, 165, 35));
 
-        jTabbedPane1.addTab("Silfide", jPanel4);
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/silfides.png"))); // NOI18N
+        jLabel42.setText("jLabel42");
+        Silfide.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 360));
 
+        Hadas.addTab("Silfide", Silfide);
+
+        Salamandras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
+        Salamandras.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+        Salamandras.add(tf_nombreSal, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 57, 146, -1));
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Estatura");
+        Salamandras.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Edad");
+        Salamandras.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 153, 40, -1));
 
         sp_estatura.setModel(new javax.swing.SpinnerNumberModel(1, 1, 15, 1));
         sp_estatura.setMaximumSize(new java.awt.Dimension(15, 15));
         sp_estatura.setMinimumSize(new java.awt.Dimension(1, 1));
+        Salamandras.add(sp_estatura, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 105, 49, -1));
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("cm");
+        Salamandras.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Alas");
+        Salamandras.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 197, 40, -1));
 
         sp_alasSal.setModel(new javax.swing.SpinnerNumberModel(16, 16, null, 1));
+        Salamandras.add(sp_alasSal, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 191, 50, -1));
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Salud");
+        Salamandras.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Poder");
+        Salamandras.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
 
         tf_saludSal.setText("683");
         tf_saludSal.setEnabled(false);
+        Salamandras.add(tf_saludSal, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 235, 36, -1));
 
         tf_poderSal.setText("71");
         tf_poderSal.setEnabled(false);
+        Salamandras.add(tf_poderSal, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 285, 36, -1));
 
         bt_guardarSalamandra.setText("Guardar");
         bt_guardarSalamandra.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -468,94 +433,64 @@ public class Principal extends javax.swing.JFrame {
                 bt_guardarSalamandraMouseClicked(evt);
             }
         });
+        Salamandras.add(bt_guardarSalamandra, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 273, 84, 44));
 
         sp_edadSal.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        Salamandras.add(sp_edadSal, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 150, 50, -1));
 
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("años");
+        Salamandras.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 153, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(tf_nombreSal, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(sp_estatura, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel5))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(tf_poderSal, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_saludSal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
-                                .addGap(48, 48, 48)
-                                .addComponent(bt_guardarSalamandra, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(sp_edadSal, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_alasSal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel10)))))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tf_nombreSal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(sp_estatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(sp_edadSal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6)
-                    .addComponent(sp_alasSal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(tf_saludSal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(tf_poderSal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bt_guardarSalamandra, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        jLabel34.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setText("Salamandras");
+        Salamandras.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 11, 165, 35));
 
-        jTabbedPane1.addTab("Salamandras", jPanel1);
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/salamandra.jpg"))); // NOI18N
+        jLabel43.setText("jLabel43");
+        Salamandras.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 360));
+
+        Hadas.addTab("Salamandras", Salamandras);
 
         javax.swing.GroupLayout jd_agregarLayout = new javax.swing.GroupLayout(jd_agregar.getContentPane());
         jd_agregar.getContentPane().setLayout(jd_agregarLayout);
         jd_agregarLayout.setHorizontalGroup(
             jd_agregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(Hadas)
         );
         jd_agregarLayout.setVerticalGroup(
             jd_agregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(Hadas, javax.swing.GroupLayout.Alignment.TRAILING)
         );
+
+        jd_modificar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        javax.swing.GroupLayout jd_eliminarLayout = new javax.swing.GroupLayout(jd_eliminar.getContentPane());
+        jd_eliminar.getContentPane().setLayout(jd_eliminarLayout);
+        jd_eliminarLayout.setHorizontalGroup(
+            jd_eliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jd_eliminarLayout.setVerticalGroup(
+            jd_eliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jd_peleaLayout = new javax.swing.GroupLayout(jd_pelea.getContentPane());
+        jd_pelea.getContentPane().setLayout(jd_peleaLayout);
+        jd_peleaLayout.setHorizontalGroup(
+            jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jd_peleaLayout.setVerticalGroup(
+            jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        jLabel45.setText("jLabel45");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -563,16 +498,31 @@ public class Principal extends javax.swing.JFrame {
         jl_pelea.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
         jl_pelea.setForeground(new java.awt.Color(255, 255, 255));
         jl_pelea.setText("Pelea");
+        jl_pelea.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jl_peleaMouseClicked(evt);
+            }
+        });
         getContentPane().add(jl_pelea, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 200, 50));
 
         jl_eliminar.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
         jl_eliminar.setForeground(new java.awt.Color(255, 255, 255));
         jl_eliminar.setText("Eliminar");
+        jl_eliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jl_eliminarMouseClicked(evt);
+            }
+        });
         getContentPane().add(jl_eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 160, 50));
 
         jl_modidficar.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
         jl_modidficar.setForeground(new java.awt.Color(255, 255, 255));
         jl_modidficar.setText("Modificar");
+        jl_modidficar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jl_modidficarMouseClicked(evt);
+            }
+        });
         getContentPane().add(jl_modidficar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 170, 40));
 
         jl_agregar.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
@@ -591,30 +541,35 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu3.setText("Opciones");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Abrir");
-        jMenu3.add(jMenuItem1);
-
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem2.setText("Guardar");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        abrir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        abrir.setText("Abrir");
+        abrir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                abrirActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem2);
+        jMenu3.add(abrir);
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem3.setText("Guardar Como");
-        jMenu3.add(jMenuItem3);
+        guardar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
+        guardar.setText("Guardar");
+        guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarActionPerformed(evt);
+            }
+        });
+        jMenu3.add(guardar);
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem4.setText("Salir");
-        jMenu3.add(jMenuItem4);
+        guardarComo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        guardarComo.setText("Guardar Como");
+        jMenu3.add(guardarComo);
 
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem5.setText("About");
-        jMenu3.add(jMenuItem5);
+        Salir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        Salir.setText("Salir");
+        jMenu3.add(Salir);
+
+        About.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        About.setText("About");
+        jMenu3.add(About);
 
         jMenuBar1.add(jMenu3);
 
@@ -623,9 +578,9 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
         
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_guardarActionPerformed
 
     private void jl_agregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_agregarMouseClicked
         jd_agregar.pack();
@@ -635,20 +590,48 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jl_agregarMouseClicked
 
     private void bt_guardarLamiasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_guardarLamiasMouseClicked
+        lam.add(new Lamias((Integer)sp_aletas.getValue(),(Integer)sp_branquias.getValue(),tf_nombreLam.getText(),(Integer)sp_edadLam.getValue(),Double.parseDouble(tf_saludLam.getText()),(Integer)sp_estaturaLam.getValue(),Integer.parseInt(tf_poderLam.getText())));
+        
         
     }//GEN-LAST:event_bt_guardarLamiasMouseClicked
 
     private void bt_guardarHamadriadesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_guardarHamadriadesMouseClicked
-        
+       lam.add(new Hamadriades(Integer.parseInt(tf_arbol.getText()), tf_nombreHam.getText(), (Integer)sp_edadHam.getValue(), Double.parseDouble(tf_saludHam.getText()), (Integer)sp_estaturaHam.getValue(), Integer.parseInt(tf_poderHam.getText())));
     }//GEN-LAST:event_bt_guardarHamadriadesMouseClicked
 
     private void bt_guardarSilfideMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_guardarSilfideMouseClicked
-        
+    lam.add(new Silfides((Integer)sp_alasSil.getValue(), tf_nombreSil.getText(), (Integer)sp_edadSil.getValue(), Double.parseDouble(tf_saludSil.getText()), (Integer)sp_estaturaSil.getValue(), Integer.parseInt(tf_poderSil.getText())));
     }//GEN-LAST:event_bt_guardarSilfideMouseClicked
 
     private void bt_guardarSalamandraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_guardarSalamandraMouseClicked
-        
+        Hadas s = new Salamandra((Integer)sp_alasSal.getValue(), tf_nombreSal.getText(), (Integer)sp_edadSal.getValue(), Double.parseDouble(tf_saludSal.getText()), (Integer)sp_estatura.getValue(), Integer.parseInt(tf_poderSal.getText()));
+        lam.add(s);
     }//GEN-LAST:event_bt_guardarSalamandraMouseClicked
+
+    private void jl_modidficarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_modidficarMouseClicked
+        jd_modificar.pack();
+        jd_modificar.setModal(true);
+        jd_modificar.setVisible(true);
+        jd_modificar.setLocationRelativeTo(this);
+    }//GEN-LAST:event_jl_modidficarMouseClicked
+
+    private void jl_eliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_eliminarMouseClicked
+        jd_eliminar.pack();
+        jd_eliminar.setModal(true);
+        jd_eliminar.setVisible(true);
+        jd_eliminar.setLocationRelativeTo(this);
+    }//GEN-LAST:event_jl_eliminarMouseClicked
+
+    private void jl_peleaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_peleaMouseClicked
+        jd_pelea.pack();
+        jd_pelea.setModal(true);
+        jd_pelea.setVisible(true);
+        jd_pelea.setLocationRelativeTo(this);
+    }//GEN-LAST:event_jl_peleaMouseClicked
+
+    private void abrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrirActionPerformed
+        
+    }//GEN-LAST:event_abrirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -686,10 +669,20 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem About;
+    private javax.swing.JTabbedPane Hadas;
+    private javax.swing.JPanel Hamadriades;
+    private javax.swing.JPanel Lamias;
+    private javax.swing.JPanel Salamandras;
+    private javax.swing.JMenuItem Salir;
+    private javax.swing.JPanel Silfide;
+    private javax.swing.JMenuItem abrir;
     private javax.swing.JButton bt_guardarHamadriades;
     private javax.swing.JButton bt_guardarLamias;
     private javax.swing.JButton bt_guardarSalamandra;
     private javax.swing.JButton bt_guardarSilfide;
+    private javax.swing.JMenuItem guardar;
+    private javax.swing.JMenuItem guardarComo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -717,7 +710,19 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -725,18 +730,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JDialog jd_agregar;
+    private javax.swing.JDialog jd_eliminar;
+    private javax.swing.JDialog jd_modificar;
+    private javax.swing.JDialog jd_pelea;
     private javax.swing.JLabel jl_agregar;
     private javax.swing.JLabel jl_eliminar;
     private javax.swing.JLabel jl_modidficar;
@@ -745,6 +742,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JSpinner sp_alasLam;
     private javax.swing.JSpinner sp_alasSal;
     private javax.swing.JSpinner sp_alasSil;
+    private javax.swing.JSpinner sp_aletas;
+    private javax.swing.JSpinner sp_branquias;
     private javax.swing.JSpinner sp_edadHam;
     private javax.swing.JSpinner sp_edadLam;
     private javax.swing.JSpinner sp_edadSal;
@@ -753,11 +752,13 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JSpinner sp_estaturaHam;
     private javax.swing.JSpinner sp_estaturaLam;
     private javax.swing.JSpinner sp_estaturaSil;
+    private javax.swing.JTextField tf_arbol;
     private javax.swing.JTextField tf_nombreHam;
     private javax.swing.JTextField tf_nombreLam;
     private javax.swing.JTextField tf_nombreSal;
     private javax.swing.JTextField tf_nombreSil;
     private javax.swing.JTextField tf_poderHam;
+    private javax.swing.JTextField tf_poderLam;
     private javax.swing.JTextField tf_poderSal;
     private javax.swing.JTextField tf_poderSil;
     private javax.swing.JTextField tf_saludHam;
@@ -765,4 +766,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_saludSal;
     private javax.swing.JTextField tf_saludSil;
     // End of variables declaration//GEN-END:variables
+ArrayList<Hadas> lam= new ArrayList();
+String path = "./hadas.bin";
+AdminBinarios ab = new AdminBinarios(path);
+
 }

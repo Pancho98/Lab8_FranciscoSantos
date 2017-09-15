@@ -196,6 +196,12 @@ public class Principal extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jLabel63 = new javax.swing.JLabel();
         jd_pelea = new javax.swing.JDialog();
+        pro1 = new javax.swing.JProgressBar();
+        pro2 = new javax.swing.JProgressBar();
+        cb_1 = new javax.swing.JComboBox<>();
+        cb_2 = new javax.swing.JComboBox<>();
+        jButton6 = new javax.swing.JButton();
+        jLabel71 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jl_pelea = new javax.swing.JLabel();
         jl_eliminar = new javax.swing.JLabel();
@@ -829,15 +835,58 @@ public class Principal extends javax.swing.JFrame {
         jLabel63.setText("jLabel63");
         jd_eliminar.getContentPane().add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 400));
 
+        cb_1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        cb_2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jButton6.setText("Pelear");
+
+        jLabel71.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel71.setText("Pelear");
+
         javax.swing.GroupLayout jd_peleaLayout = new javax.swing.GroupLayout(jd_pelea.getContentPane());
         jd_pelea.getContentPane().setLayout(jd_peleaLayout);
         jd_peleaLayout.setHorizontalGroup(
             jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jd_peleaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_peleaLayout.createSequentialGroup()
+                        .addComponent(cb_1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(cb_2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jd_peleaLayout.createSequentialGroup()
+                        .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(pro1, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                            .addComponent(pro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_peleaLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jd_peleaLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 105, Short.MAX_VALUE))
         );
         jd_peleaLayout.setVerticalGroup(
             jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(jd_peleaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pro1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(pro2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54)
+                .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cb_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73)
+                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         jLabel45.setText("jLabel45");
@@ -1101,6 +1150,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton bt_guardarLamias;
     private javax.swing.JButton bt_guardarSalamandra;
     private javax.swing.JButton bt_guardarSilfide;
+    private javax.swing.JComboBox<String> cb_1;
+    private javax.swing.JComboBox<String> cb_2;
     private javax.swing.JMenuItem guardar;
     private javax.swing.JMenuItem guardarComo;
     private javax.swing.JButton jButton1;
@@ -1108,6 +1159,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1176,6 +1228,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
@@ -1234,6 +1287,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jl_eliminar;
     private javax.swing.JLabel jl_modidficar;
     private javax.swing.JLabel jl_pelea;
+    private javax.swing.JProgressBar pro1;
+    private javax.swing.JProgressBar pro2;
     private javax.swing.JSpinner sp_alasHam;
     private javax.swing.JSpinner sp_alasLam;
     private javax.swing.JSpinner sp_alasSal;

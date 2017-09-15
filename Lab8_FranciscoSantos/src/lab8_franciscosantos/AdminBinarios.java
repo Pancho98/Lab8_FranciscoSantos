@@ -19,11 +19,11 @@ public class AdminBinarios {
     
     
 
-    public ArrayList<Hadas> getListaPersonas() {
+    public ArrayList<Hadas> getListaHadas() {
         return listaPersonas;
     }
 
-    public void setListaPersonas(ArrayList<Hadas> listaPersonas) {
+    public void setListaHadas(ArrayList<Hadas> listaPersonas) {
         this.listaPersonas = listaPersonas;
     }
 

@@ -5,7 +5,14 @@
  */
 package lab8_franciscosantos;
 
+import com.sun.istack.internal.logging.Logger;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -561,14 +568,29 @@ public class Principal extends javax.swing.JFrame {
 
         guardarComo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
         guardarComo.setText("Guardar Como");
+        guardarComo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                guardarComoActionPerformed(evt);
+            }
+        });
         jMenu3.add(guardarComo);
 
         Salir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
         jMenu3.add(Salir);
 
         About.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         About.setText("About");
+        About.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AboutActionPerformed(evt);
+            }
+        });
         jMenu3.add(About);
 
         jMenuBar1.add(jMenu3);
@@ -579,7 +601,9 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
-        
+        ab.setListaHadas(lam);
+        ab.escribirArchivo();
+        JOptionPane.showMessageDialog(this, "Se guardo");
     }//GEN-LAST:event_guardarActionPerformed
 
     private void jl_agregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jl_agregarMouseClicked
@@ -630,8 +654,51 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jl_peleaMouseClicked
 
     private void abrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrirActionPerformed
-        
+        if(!ab.getArchivo().exists()){
+        JFileChooser fc = new JFileChooser();
+        FileNameExtensionFilter filtro = new FileNameExtensionFilter("Bin", "bin");
+        fc.setFileFilter(filtro);
+        int select = fc.showSaveDialog(this);
+        if (select == JFileChooser.APPROVE_OPTION) {
+            File fichero = fc.getSelectedFile();
+            path=fichero.getPath();
+            try {
+                ab.cargarArchivo();
+                lam=ab.getListaHadas();
+            } catch (Exception ex) {
+                
+            }
+        }
+        }
     }//GEN-LAST:event_abrirActionPerformed
+
+    private void guardarComoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarComoActionPerformed
+        FileNameExtensionFilter filtracion = new FileNameExtensionFilter("Bin", "bin");
+        JFileChooser choose = new JFileChooser();
+        choose.setFileFilter(filtracion);
+        int select = choose.showSaveDialog(this);
+        FileWriter fw = null;
+        File fil= null;
+        if (select==JFileChooser.APPROVE_OPTION) {
+            try {
+                if (choose.getFileFilter().getDescription().equals("Bin")) {
+                    path=choose.getSelectedFile().getPath()+".bin";
+                    
+                }
+            } catch (Exception e) {
+            }
+            
+            
+        }
+    }//GEN-LAST:event_guardarComoActionPerformed
+
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_SalirActionPerformed
+
+    private void AboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutActionPerformed
+        JOptionPane.showMessageDialog(this, "El programa esta hecho con la intension de sacar puntos para pasar el lab y poder asi tener mejor nota");
+    }//GEN-LAST:event_AboutActionPerformed
 
     /**
      * @param args the command line arguments

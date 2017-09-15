@@ -1,13 +1,17 @@
 
 package lab8_franciscosantos;
 
+import java.io.Serializable;
 
-public class Hadas {
+
+public class Hadas implements Serializable{
     private String nombre;
     private int edad;
     private double salud;
     private int estatura;
     private int poder;
+    
+    private static final long SerialVersionUID=777L;
 
     public Hadas() {
     }

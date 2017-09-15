@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -117,6 +118,21 @@ public class Principal extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jd_modificar = new javax.swing.JDialog();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jd_eliminar = new javax.swing.JDialog();
         jd_pelea = new javax.swing.JDialog();
         jLabel45 = new javax.swing.JLabel();
@@ -177,7 +193,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel16.setText("Salud");
         Lamias.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 251, -1, -1));
 
-        tf_saludLam.setText("683");
+        tf_saludLam.setText("475");
         tf_saludLam.setEnabled(false);
         Lamias.add(tf_saludLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 248, 36, -1));
 
@@ -185,7 +201,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel17.setText("Poder");
         Lamias.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 301, -1, -1));
 
-        tf_poderLam.setText("71");
+        tf_poderLam.setText("57");
         tf_poderLam.setEnabled(false);
         Lamias.add(tf_poderLam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 298, 36, -1));
 
@@ -268,7 +284,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel24.setText("Salud");
         Hamadriades.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, -1, -1));
 
-        tf_saludHam.setText("683");
+        tf_saludHam.setText("373");
         tf_saludHam.setEnabled(false);
         Hamadriades.add(tf_saludHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 235, 36, -1));
 
@@ -276,7 +292,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel25.setText("Poder");
         Hamadriades.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
 
-        tf_poderHam.setText("71");
+        tf_poderHam.setText("173");
         tf_poderHam.setEnabled(false);
         Hamadriades.add(tf_poderHam, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 285, 36, -1));
 
@@ -348,7 +364,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel32.setText("Salud");
         Silfide.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 238, -1, -1));
 
-        tf_saludSil.setText("683");
+        tf_saludSil.setText("563");
         tf_saludSil.setEnabled(false);
         Silfide.add(tf_saludSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 235, 36, -1));
 
@@ -357,7 +373,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel33.setText("Poder");
         Silfide.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
 
-        tf_poderSil.setText("71");
+        tf_poderSil.setText("67");
         tf_poderSil.setEnabled(false);
         Silfide.add(tf_poderSil, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 285, 36, -1));
 
@@ -474,6 +490,51 @@ public class Principal extends javax.swing.JFrame {
         );
 
         jd_modificar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel46.setText("jLabel46");
+        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 11, -1, -1));
+
+        jLabel47.setText("jLabel47");
+        jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
+
+        jLabel48.setText("jLabel48");
+        jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel49.setText("jLabel49");
+        jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel50.setText("jLabel50");
+        jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+
+        jLabel51.setText("jLabel51");
+        jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+
+        jLabel52.setText("jLabel52");
+        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+
+        jLabel53.setText("jLabel53");
+        jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jLabel54.setText("jLabel54");
+        jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+
+        jLabel55.setText("jLabel55");
+        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 420));
+
+        jTabbedPane1.addTab("tab1", jPanel1);
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane1.addTab("tab2", jPanel2);
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane1.addTab("tab3", jPanel3);
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane1.addTab("tab4", jPanel4);
+
+        jd_modificar.getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 450));
 
         javax.swing.GroupLayout jd_eliminarLayout = new javax.swing.GroupLayout(jd_eliminar.getContentPane());
         jd_eliminar.getContentPane().setLayout(jd_eliminarLayout);
@@ -683,11 +744,21 @@ public class Principal extends javax.swing.JFrame {
             try {
                 if (choose.getFileFilter().getDescription().equals("Bin")) {
                     path=choose.getSelectedFile().getPath()+".bin";
-                    
+                    fil=new File(path);
+                    ab.setListaHadas(lam);
+                    ab.escribirArchivo();
+                }else{
+                    fil = choose.getSelectedFile();
                 }
+                fw=new FileWriter(fil);
+                
+                JOptionPane.showMessageDialog(this, "El archivo se guardo");
             } catch (Exception e) {
             }
-            
+            try {
+                fw.close();
+            } catch (IOException ex) {
+            }
             
         }
     }//GEN-LAST:event_guardarComoActionPerformed
@@ -790,13 +861,28 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JDialog jd_agregar;
     private javax.swing.JDialog jd_eliminar;
     private javax.swing.JDialog jd_modificar;

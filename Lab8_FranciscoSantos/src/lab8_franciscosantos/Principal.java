@@ -190,6 +190,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel82 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
         jd_eliminar = new javax.swing.JDialog();
+        jLabel62 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jButton5 = new javax.swing.JButton();
+        jLabel63 = new javax.swing.JLabel();
         jd_pelea = new javax.swing.JDialog();
         jLabel45 = new javax.swing.JLabel();
         jl_pelea = new javax.swing.JLabel();
@@ -802,16 +807,27 @@ public class Principal extends javax.swing.JFrame {
 
         jd_modificar.getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 450));
 
-        javax.swing.GroupLayout jd_eliminarLayout = new javax.swing.GroupLayout(jd_eliminar.getContentPane());
-        jd_eliminar.getContentPane().setLayout(jd_eliminarLayout);
-        jd_eliminarLayout.setHorizontalGroup(
-            jd_eliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jd_eliminarLayout.setVerticalGroup(
-            jd_eliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jd_eliminar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel62.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel62.setText("Eliminar");
+        jd_eliminar.getContentPane().add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 11, -1, 28));
+
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        jd_eliminar.getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 73, 154, -1));
+
+        jButton5.setText("Eliminar");
+        jd_eliminar.getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 116, 90, 42));
+
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/kill.jpg"))); // NOI18N
+        jLabel63.setText("jLabel63");
+        jd_eliminar.getContentPane().add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 400));
 
         javax.swing.GroupLayout jd_peleaLayout = new javax.swing.GroupLayout(jd_pelea.getContentPane());
         jd_pelea.getContentPane().setLayout(jd_peleaLayout);
@@ -1091,6 +1107,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1149,6 +1166,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
@@ -1171,12 +1190,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JList<String> jList1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner10;
     private javax.swing.JSpinner jSpinner11;

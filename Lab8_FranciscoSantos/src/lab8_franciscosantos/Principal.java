@@ -202,6 +202,7 @@ public class Principal extends javax.swing.JFrame {
         cb_2 = new javax.swing.JComboBox<>();
         jButton6 = new javax.swing.JButton();
         jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jl_pelea = new javax.swing.JLabel();
         jl_eliminar = new javax.swing.JLabel();
@@ -556,6 +557,7 @@ public class Principal extends javax.swing.JFrame {
             .addComponent(Hadas, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
+        jd_modificar.setTitle("Modificar");
         jd_modificar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -813,11 +815,13 @@ public class Principal extends javax.swing.JFrame {
 
         jd_modificar.getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 450));
 
+        jd_eliminar.setTitle("Eliminar");
         jd_eliminar.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(255, 255, 255));
         jLabel62.setText("Eliminar");
-        jd_eliminar.getContentPane().add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 11, -1, 28));
+        jd_eliminar.getContentPane().add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, 28));
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -835,63 +839,33 @@ public class Principal extends javax.swing.JFrame {
         jLabel63.setText("jLabel63");
         jd_eliminar.getContentPane().add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 400));
 
+        jd_pelea.setTitle("Pelear");
+        jd_pelea.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jd_pelea.getContentPane().add(pro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 67, 169, 27));
+        jd_pelea.getContentPane().add(pro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 124, 169, 26));
+
         cb_1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jd_pelea.getContentPane().add(cb_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 204, 72, -1));
 
         cb_2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jd_pelea.getContentPane().add(cb_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 204, 73, -1));
 
         jButton6.setText("Pelear");
+        jd_pelea.getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 297, 105, 36));
 
         jLabel71.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel71.setText("Pelear");
+        jd_pelea.getContentPane().add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 11, 107, 38));
 
-        javax.swing.GroupLayout jd_peleaLayout = new javax.swing.GroupLayout(jd_pelea.getContentPane());
-        jd_pelea.getContentPane().setLayout(jd_peleaLayout);
-        jd_peleaLayout.setHorizontalGroup(
-            jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jd_peleaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jd_peleaLayout.createSequentialGroup()
-                        .addComponent(cb_1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cb_2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jd_peleaLayout.createSequentialGroup()
-                        .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(pro1, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
-                            .addComponent(pro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_peleaLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jd_peleaLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 105, Short.MAX_VALUE))
-        );
-        jd_peleaLayout.setVerticalGroup(
-            jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jd_peleaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(pro1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(pro2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
-                .addGroup(jd_peleaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(73, 73, 73)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(88, Short.MAX_VALUE))
-        );
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/fight.jpg"))); // NOI18N
+        jLabel72.setText("jLabel72");
+        jd_pelea.getContentPane().add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 420));
 
         jLabel45.setText("jLabel45");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Principal");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jl_pelea.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
@@ -1229,6 +1203,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;

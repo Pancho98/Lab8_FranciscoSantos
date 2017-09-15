@@ -129,10 +129,66 @@ public class Principal extends javax.swing.JFrame {
         jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jSpinner1 = new javax.swing.JSpinner();
+        jSpinner2 = new javax.swing.JSpinner();
+        jSpinner3 = new javax.swing.JSpinner();
+        jSpinner4 = new javax.swing.JSpinner();
+        jSpinner5 = new javax.swing.JSpinner();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel83 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel56 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jSpinner6 = new javax.swing.JSpinner();
+        jSpinner9 = new javax.swing.JSpinner();
+        jSpinner10 = new javax.swing.JSpinner();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel65 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jSpinner11 = new javax.swing.JSpinner();
+        jSpinner14 = new javax.swing.JSpinner();
+        jSpinner15 = new javax.swing.JSpinner();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jLabel74 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jSpinner16 = new javax.swing.JSpinner();
+        jSpinner19 = new javax.swing.JSpinner();
+        jSpinner20 = new javax.swing.JSpinner();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
         jd_eliminar = new javax.swing.JDialog();
         jd_pelea = new javax.swing.JDialog();
         jLabel45 = new javax.swing.JLabel();
@@ -493,46 +549,256 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel46.setText("jLabel46");
-        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 11, -1, -1));
+        jLabel46.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel46.setText("Lamia");
+        jPanel1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
 
-        jLabel47.setText("jLabel47");
+        jLabel47.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel47.setText("Nombre");
         jPanel1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
 
-        jLabel48.setText("jLabel48");
+        jLabel48.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel48.setText("Estatura");
         jPanel1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
-        jLabel49.setText("jLabel49");
+        jLabel49.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel49.setText("Edad");
         jPanel1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
 
-        jLabel50.setText("jLabel50");
+        jLabel50.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel50.setText("Aleta");
         jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
-        jLabel51.setText("jLabel51");
+        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel51.setText("Branquias");
         jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
-        jLabel52.setText("jLabel52");
+        jLabel52.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel52.setText("Alas");
         jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
-        jLabel53.setText("jLabel53");
+        jLabel53.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel53.setText("Salud");
         jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
 
-        jLabel54.setText("jLabel54");
+        jLabel54.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel54.setText("Poder");
         jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 140, -1));
+        jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 50, -1));
+        jPanel1.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 50, -1));
+        jPanel1.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 50, -1));
+        jPanel1.add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 50, -1));
+        jPanel1.add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 50, -1));
 
-        jLabel55.setText("jLabel55");
-        jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 420));
+        jTextField2.setText("475");
+        jTextField2.setEnabled(false);
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 50, -1));
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jTextField3.setText("57");
+        jTextField3.setEnabled(false);
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 50, -1));
+
+        jButton1.setText("Modify");
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 310, 80, 50));
+
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/mod2.jpg"))); // NOI18N
+        jLabel83.setText("jLabel83");
+        jPanel1.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 420));
+
+        jTabbedPane1.addTab("Lamia", jPanel1);
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jTabbedPane1.addTab("tab2", jPanel2);
+
+        jLabel56.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setText("Poder");
+        jPanel2.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+
+        jTextField4.setText("373");
+        jTextField4.setEnabled(false);
+        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 50, -1));
+
+        jTextField5.setText("475");
+        jTextField5.setEnabled(false);
+        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 50, -1));
+
+        jLabel57.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel57.setText("Salud");
+        jPanel2.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jButton2.setText("Modify");
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 310, 80, 50));
+        jPanel2.add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 50, -1));
+        jPanel2.add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 50, -1));
+        jPanel2.add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 50, -1));
+        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 140, -1));
+
+        jLabel58.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel58.setText("Haramadriades");
+        jPanel2.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+
+        jLabel59.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel59.setText("Nombre");
+        jPanel2.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
+
+        jLabel60.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel60.setText("Estatura");
+        jPanel2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel61.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel61.setText("Edad");
+        jPanel2.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel64.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel64.setText("Alas");
+        jPanel2.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        jLabel86.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel86.setText("Arbol");
+        jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+
+        jTextField13.setText("173");
+        jTextField13.setEnabled(false);
+        jPanel2.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 50, -1));
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/mod2.jpg"))); // NOI18N
+        jLabel55.setText("jLabel55");
+        jPanel2.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 430));
+
+        jTabbedPane1.addTab("Hamadriades", jPanel2);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jTabbedPane1.addTab("tab3", jPanel3);
+
+        jLabel65.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel65.setText("Poder");
+        jPanel3.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+
+        jTextField7.setText("57");
+        jTextField7.setEnabled(false);
+        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 50, -1));
+
+        jTextField8.setText("475");
+        jTextField8.setEnabled(false);
+        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 50, -1));
+
+        jLabel66.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel66.setText("Salud");
+        jPanel3.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jButton3.setText("Modify");
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 310, 80, 50));
+        jPanel3.add(jSpinner11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 50, -1));
+        jPanel3.add(jSpinner14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 50, -1));
+        jPanel3.add(jSpinner15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 50, -1));
+        jPanel3.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 140, -1));
+
+        jLabel67.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("Silfides");
+        jPanel3.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
+
+        jLabel68.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setText("Nombre");
+        jPanel3.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
+
+        jLabel69.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setText("Estatura");
+        jPanel3.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel70.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setText("Edad");
+        jPanel3.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText("Alas");
+        jPanel3.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/mod2.jpg"))); // NOI18N
+        jLabel84.setText("jLabel84");
+        jPanel3.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 320, 430));
+
+        jTabbedPane1.addTab("Silfides", jPanel3);
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jTabbedPane1.addTab("tab4", jPanel4);
+
+        jLabel74.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText("Poder");
+        jPanel4.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+
+        jTextField10.setText("57");
+        jTextField10.setEnabled(false);
+        jPanel4.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 50, -1));
+
+        jTextField11.setText("475");
+        jTextField11.setEnabled(false);
+        jPanel4.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 50, -1));
+
+        jLabel75.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("Salud");
+        jPanel4.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jButton4.setText("Modify");
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 310, 80, 50));
+        jPanel4.add(jSpinner16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 50, -1));
+        jPanel4.add(jSpinner19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 50, -1));
+        jPanel4.add(jSpinner20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 50, -1));
+        jPanel4.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 140, -1));
+
+        jLabel76.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setText("Salamandras");
+        jPanel4.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+
+        jLabel77.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("Nombre");
+        jPanel4.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
+
+        jLabel78.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setText("Estatura");
+        jPanel4.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel79.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel79.setText("Edad");
+        jPanel4.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        jLabel82.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setText("Alas");
+        jPanel4.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab8_franciscosantos/mod2.jpg"))); // NOI18N
+        jLabel85.setText("jLabel85");
+        jPanel4.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 430));
+
+        jTabbedPane1.addTab("Salamandria", jPanel4);
 
         jd_modificar.getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 450));
 
@@ -821,6 +1087,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton bt_guardarSilfide;
     private javax.swing.JMenuItem guardar;
     private javax.swing.JMenuItem guardarComo;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -872,9 +1142,34 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
@@ -882,7 +1177,34 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner11;
+    private javax.swing.JSpinner jSpinner14;
+    private javax.swing.JSpinner jSpinner15;
+    private javax.swing.JSpinner jSpinner16;
+    private javax.swing.JSpinner jSpinner19;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JSpinner jSpinner20;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner5;
+    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JDialog jd_agregar;
     private javax.swing.JDialog jd_eliminar;
     private javax.swing.JDialog jd_modificar;
